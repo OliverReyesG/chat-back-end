@@ -8,7 +8,7 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3002"],
+    origin: ["http://localhost:3000", "http://localhost:3002", "https://62d0dc4b4438f93bae3180d5--aesthetic-pothos-3a2c06.netlify.app"],
     methods: ["GET", "POST"],
   },
 });
