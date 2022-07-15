@@ -6,6 +6,8 @@ const cors = require("cors")
 const server = http.createServer(app);
 app.use(cors());
 
+const port = process.env.PORT || 3001
+
 const io = new Server(server, {
   cors: {
     origin: ["http://localhost:3000", "http://localhost:3002", "https://62d0dc4b4438f93bae3180d5--aesthetic-pothos-3a2c06.netlify.app"],
@@ -32,6 +34,6 @@ io.on("connection", (socket) => {
 })
 
 
-server.listen(3001, () => {
+server.listen(port, () => {
     console.log("Server listening on port: 3001")
 })
