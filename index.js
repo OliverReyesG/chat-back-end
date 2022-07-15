@@ -10,7 +10,7 @@ const port = process.env.PORT || 3001
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3002", "https://oliverreyeschat.netlify.app"],
+    origin: ["http://localhost:3000", "http://localhost:3002", "https://62d0dc4b4438f93bae3180d5--aesthetic-pothos-3a2c06.netlify.app", "https://oliverreyeschat.netlify.app"],
     methods: ["GET", "POST"],
   },
 });
